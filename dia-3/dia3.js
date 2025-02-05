@@ -1,23 +1,29 @@
-// Dados do usuario / variaveis
+// variaveis
 
-let nomeDoUsuario = prompt("Insira seu nome")
-let idadeDoUsuario = parseInt(prompt("insira sua idade"))
-let alturaDoUsuario = prompt('insira sua altura')
-let alturaDoUsuarioNumb = Number(alturaDoUsuario)
-let pesoDoUsuario = prompt('insira seu peso')
-let pesodoUsuarioNumb = Number(pesoDoUsuario)
+let nome = ""
+let idade = 0
+let altura = 0
+let peso = 0
+
+// dados do usuario
+
+nome = prompt('Insira seu nome: ')
+idade = parseInt(prompt('insira sua idade: '))
+altura = parseFloat(prompt('insira sua altura: '))
+peso = parseInt(prompt('insira seu peso: '))
 
 // Calculo do ano de nascimento e o IMC
 
-let anoDeNascimento = 2023 - idadeDoUsuario
+let anoNasc = 0
+anoNasc = 2023 - idade
 
-let imcDoUsuario = 0
-imcDoUsuario = pesoDoUsuario / (alturaDoUsuario * alturaDoUsuario)
+let imc = 0
+imc = peso / (altura * altura)
 
 // Mensagem para o usuario no console
 
-console.log('Olá ' + nomeDoUsuario + ', você tem ' + idadeDoUsuario + ' anos, nasceu em ' + anoDeNascimento + ', tem ' +
-    alturaDoUsuario + ' de altura, pesa ' + pesoDoUsuario + 'kg seu IMC é ' + imcDoUsuario + ' kg/m2.');
+console.log('Olá ' + nome + ', você tem ' + idade + ' anos, nasceu em ' + anoNasc + ', tem ' +
+    altura + ' de altura, pesa ' + peso + 'kg seu IMC é ' + imc + ' kg/m2.');
 
 
 
