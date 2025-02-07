@@ -1,23 +1,16 @@
 // Sistema de perguntas
 
-let fome = prompt('Você está com fome?')
-let dinheiro = prompt('Você tem dinheiro?')
-let restaurante = prompt('O restaurante está aberto ou fechado?')
+const fome = prompt('Você está com fome? (sim/nao)')
+const dinheiro = prompt('Você tem dinheiro? (sim/nao)')
+const restaurante = prompt('O restaurante está aberto ou fechado? (sim/nao)')
 
+if (fome === 'nao' || dinheiro == 'nao') {
+    console.log('Hoje o jantar será em casa');
+} else if (dinheiro === 'sim' && restaurante === 'sim') {
+    console.log('Hoje o jantar será no seu restaurante preferido!');  
+} else {
+    console.log('Peça um delivery'); 
+}
 
-if (fome === 'não' && dinheiro === 'não' && restaurante === 'fechado') {
-    console.log('Hoje a janta será em casa');
-}
-if (fome === 'não' && dinheiro === 'não' && restaurante === 'aberto') {
-    console.log('Hoje a janta será em casa');
-
-}
-if (fome === 'sim' && dinheiro === 'sim' && restaurante === 'aberto') {
-    console.log('Hoje o jantar será no seu restaurante preferido!');
-}
-if (fome === 'sim' && dinheiro === 'sim' && restaurante === 'fechado') {
-    console.log('Peça um delicery!');
-
-}
 
 
