@@ -1,7 +1,7 @@
 // CRIANDO VARIAVEIS
 
-let escolhaUm = Number(prompt('Escolha um número'))
-let escolhaDois = Number(prompt('Escolha outro número'))
+let escolhaUm = parseInt(prompt('Escolha um número'))
+let escolhaDois = parseInt(prompt('Escolha outro número'))
 let opções = prompt('Escolha alguma das operações a seguir: +, -, x, /.')
 
 // SWITCHCASE
