@@ -3,6 +3,7 @@
 let opções = prompt('O que você deseja:' + '\n1 = abastecer com gasolina; \n2 = abastecer com álcool; \n3 = calibrar os pneus.')
 let quantidade
 let valor 
+
 // SWITCHCASE
 
 switch (opções) {
