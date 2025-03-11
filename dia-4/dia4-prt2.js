@@ -15,3 +15,7 @@ if (idade < 18 || temCartaDeMotorista === 'nao') {
     console.log(nome + ', você pode dirigir mas não tem um carro');
     
 }
+
+
+
+
